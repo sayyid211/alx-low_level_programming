@@ -1,0 +1,1 @@
+This repo is for basic programming in C
