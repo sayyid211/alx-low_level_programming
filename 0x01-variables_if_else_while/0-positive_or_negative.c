@@ -1,8 +1,11 @@
 #include <stdio.h>
+#include <time.h>
+#include <stdlib.h>
 
 /**
  * main - Entry point
  *
+ * n: random number to be tested on number line
  * Return: Success
  */
 
