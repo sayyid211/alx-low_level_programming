@@ -20,7 +20,7 @@ int main(void)
 	/* check the status of n*/
 	if (n < 0)
 	{
-		printf("%i is negative\n",n);
+		printf("%i is negative\n", n);
 	}
 	else if (n == 0)
 	{
