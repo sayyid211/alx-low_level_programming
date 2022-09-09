@@ -9,17 +9,23 @@
 int main(void)
 {
 	int n;
+
+	srand(time(0));
+
+	n = rand() - RAND_MAX / 2;
+
+	/* check the status of n*/
 	if (n <= 0)
 	{
-		printf("%ls, is negative",&n);
+		printf("%i is negative",&n);
 	}
 	else if (n == 0)
 	{
-		printf("ls, is zero", &n);
+		printf("%i, is zero", &n);
 	}
 	else
 	{
-		printf("ls, is positive", &n);
+		printf("%i, is positive", &n);
 	}
 	return (0);
 }
