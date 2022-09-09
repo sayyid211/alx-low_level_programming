@@ -16,12 +16,12 @@ int main(void)
 	y = 'a';
 	while (x <= '9')
 	{
-		putchar('x');
+		putchar(x);
 		x++;
 	}
 	while (y <= 'f')
 	{
-		putchar('y');
+		putchar(y);
 		y++;
 	}
 	putchar('\n');
