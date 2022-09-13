@@ -1,9 +1,10 @@
 #include "main.h"
+
 /**
  * putchar - print characters to stdout
  */
 
-void putchar(void)
+void show(void)
 {
 	int i = 0;
 	char str[] = "_putchar";
@@ -14,13 +15,15 @@ void putchar(void)
 		i++;
 	}
 }
+
 /**
  * main - Entry point
  * Return: Success
  */
+
 int main(void)
 {
-	putchar();
+	show();
 	_putchar('\n');
 	return (0);
 }
