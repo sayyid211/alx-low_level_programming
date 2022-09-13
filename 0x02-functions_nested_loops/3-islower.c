@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * islowerm - checks for the case of an alphabet
+ * _islowerm - checks for the case of an alphabet
  * Return: lower(0) 0r upper(1)
  */
 
-int islower(int c)
+int _islower(int c)
 {
 	if (c <97)
 	{
