@@ -2,6 +2,7 @@
 
 /**
  * _abs - returns the absolute value of an integer
+ * @x: arg
  */
 int _abs(int x)
 {
