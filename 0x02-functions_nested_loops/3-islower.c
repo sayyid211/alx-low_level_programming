@@ -1,6 +1,7 @@
 #include "main.h"
 /**
- * _islowerm - checks for the case of an alphabet
+ * _islower - checks for the case of an alphabet
+ * c: argument to test
  * Return: lower(0) 0r upper(1)
  */
 
