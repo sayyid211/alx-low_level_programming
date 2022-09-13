@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * _islower - checks for the case of an alphabet
- * c: argument to test
+ * @c: argument to test
  * Return: lower(0) 0r upper(1)
  */
 
