@@ -30,5 +30,5 @@ int print_last_digit(int x)
 	int c = _abs(x % 10) + 48;
 
 	_putchar(c);
-	return _abs(x % 10);
+	return (_abs(x % 10));
 }
