@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * putchar - print characters to stdout
+ * show - print characters to stdout
  */
 
 void show(void)
 {
 	int i = 0;
-	char str[] = "_putchar";
+	char str[8] = "_putchar";
 
 	while (str[i] != '\n')
 	{
