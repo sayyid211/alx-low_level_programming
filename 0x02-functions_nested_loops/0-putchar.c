@@ -9,7 +9,7 @@ void show(void)
 	int i = 0;
 	char str[8] = "_putchar";
 
-	while (str[i] != '\n')
+	while (i < 8)
 	{
 		_putchar(str[i]);
 		i++;
