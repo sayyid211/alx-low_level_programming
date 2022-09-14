@@ -1,4 +1,3 @@
-cat 8-24_hours.c
 #include "main.h"
 /**
  * jack_bauer - print 24hrs
