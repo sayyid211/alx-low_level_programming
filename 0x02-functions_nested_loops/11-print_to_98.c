@@ -12,16 +12,16 @@ void print_to_98(int n)
 	{
 		if (n > 98)
 		{
-			printf(n);
+			printf("%d", n);
 			n -= 1;
 		}
 		else if (n == 98)
 		{
-			printf(n);
+			printf("%d", n);
 		}
 		else
 		{
-			printf(n);
+			printf("%d", n);
 			n += 1;
 		}
 	}
