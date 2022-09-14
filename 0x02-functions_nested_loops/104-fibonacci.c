@@ -7,20 +7,20 @@
 
 int main(void)
 {
-	unsigned long a = 0;
-	unsigned long b = 1;
-	unsigned long sum = 1;
+	double a = 1;
+	double b = 1;
+	double sum = 1;
 	int counter = 0;
 
 	while (counter < 98)
 	{
-		printf("%lu, ", sum);
+		printf("%0.f, ", sum);
 		sum = a + b;
 		b = sum;
 		a = b;
 		counter++;
 	}
 	if (counter == 98)
-		printf("%lu\n", sum);
+		printf("%0.f\n", sum);
 	return (0);
 }
