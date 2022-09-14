@@ -20,7 +20,7 @@ int main(void)
 		a = b;
 		counter++;
 	}
-	if (counter == 98)
+	if (counter == 97)
 		printf("%0.f\n", sum);
 	return (0);
 }
