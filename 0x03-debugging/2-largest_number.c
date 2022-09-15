@@ -8,7 +8,7 @@
  * Return: largest number
  */
 
-int largest_number(unsigned int a, unsigned int b, unsigned int c)
+int largest_number(long a, long b, long c)
 {
 	if (a >= b && b >= c)
 	{
