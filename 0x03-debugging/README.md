@@ -1,0 +1,1 @@
+Debugging is twice as hard as writing the program from scratch, therefore, if you write the code as cleverly as possible, you are, by definition not capable of debugging it
