@@ -6,7 +6,7 @@
 
 void more_numbers(void)
 {
-	char tens[] = {0,1,2,3,4,5,6,7,8,9,1,0,1,1,1,2,1,3,1,4};
+	char t[] = "01234567891011121314";
 	int i = 0;
 	int c = 0;
 
@@ -14,8 +14,9 @@ void more_numbers(void)
 	{
 		for (; i < 20; i++)
 		{
-			_putchar(tens[i]);
+			_putchar(t[i]);
 		}
+		i = 0;
 		_putchar('\n');
 		c++;
 	}
