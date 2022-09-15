@@ -10,16 +10,30 @@
 
 int largest_number(long a, long b, long c)
 {
-	if (a >= b && b >= c)
+	long temp;
+	
+	if (a >= b )
 	{
-		return (a);
-	}
-	else if (b >= a && a >= c)
-	{
-		return (b);
+		temp = a;
+		if (temp >= c)
+		{
+			return (temp);
+		}
+		else
+		{
+			return (c);
+		}
 	}
 	else
 	{
-		return (c);
+		temp = b;
+		if (temp >= c)
+		{
+			return (temp);
+		}
+		else
+		{
+			return (c);
+		}
 	}
 }
