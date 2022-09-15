@@ -11,8 +11,8 @@
 int largest_number(long a, long b, long c)
 {
 	long temp;
-	
-	if (a >= b )
+
+	if (a >= b)
 	{
 		temp = a;
 		if (temp >= c)
