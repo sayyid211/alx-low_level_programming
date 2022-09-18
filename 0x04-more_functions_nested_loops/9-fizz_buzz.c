@@ -29,6 +29,6 @@ int main(void)
 		}
 		x++;
 	}
-	printf("Buzz");
+	printf("Buzz\n");
 	return (0);
 }
