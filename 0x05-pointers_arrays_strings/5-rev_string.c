@@ -22,7 +22,7 @@ int _strlen(char *s)
 
 void rev_string(char *s)
 {
-	int length = _strlen(s);
+	int length = _strlen(*s);
 	int i = 0;
 	char *r = 0;
 
