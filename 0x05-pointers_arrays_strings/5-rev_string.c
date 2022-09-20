@@ -24,8 +24,9 @@ void rev_string(char *s)
 {
 	int length = _strlen(s);
 	int i = 0;
-	char *r = *s;
+	char *r = 0;
 
+	*r = *s;
 	while (length != 0)
 	{
 		s[i] = r[length];
