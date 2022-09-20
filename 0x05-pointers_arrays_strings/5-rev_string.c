@@ -29,7 +29,7 @@ void rev_string(char *s)
 	*r = *s;
 	while (length != 0)
 	{
-		s[i] = r[length];
+		*(s + i) = *(r + length);
 		i++;
 		length--;
 	}
