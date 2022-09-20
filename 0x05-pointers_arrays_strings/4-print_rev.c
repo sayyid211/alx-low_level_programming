@@ -15,6 +15,11 @@ int _strlen(char *s)
 	return (i);
 }
 
+/**
+ * print_rev - print reverse str
+ * @s: arg
+ */
+
 void print_rev(char *s)
 {
 	int length = _strlen(s);
@@ -24,5 +29,4 @@ void print_rev(char *s)
 		_putchar(*(s + length));
 		length--;
 	}
-	_putchar('\n');
 }
