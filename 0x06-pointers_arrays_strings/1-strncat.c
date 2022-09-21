@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * _strlen - returns length of string
  * @s: arg
@@ -18,22 +17,31 @@ int _strlen(char *s)
 }
 
 /**
- * _strcat - concatenates two strings
+ * _strncat - conc two str with condition
+ *
  * @dest: destination
  * @src: source
- * Return: co ncatenated str
+ * @n: limit
+ * Return: Concatenated str
  */
 
-char *_strcat(char *dest, char *src)
+char *_strncat(char *dest, char *src, int n)
 {
 	int joint = _strlen(dest) - 1;
-	int i = 0;
+	int i = 0; /* loop through index of src */
 
-	while (*(src + i) != '\0')
+	while (dest[i] != '\0')
 	{
-		dest[joint] = src[i];
-		joint++;
-		i++;
+		if (i < n)
+		{
+			dest[joint] = src[i];
+			joint++;
+			i++;
+		}
+		else
+		{
+			break;
+		}
 	}
 	return (dest);
 }
