@@ -8,20 +8,24 @@
 void rev_string(char *s)
 {
 	int x = 0;
-	int y;
-	char *temp = s; /* copy arg to temp */
+	int y; /* size of string */
+	char temp; /* a temporary store */
 
-	/* get length of temp */
-	while (*(temp + x) != 0)
+	/* get length of s */
+	while (*(s + x) != '\0')
 	{
 		x++;
 	}
 	y = x - 1;
-	
+
+	x = 0; /* make x 0 to iterate through s */
+
 	/* get reverse val of temp to s */
-	while (y <= x && y >= 0)
+	while (x < (y / 2))
 	{
-		s[(x - 1) - y] = temp[y];
-		y--;
+		temp = *(s + x);
+		*(s + x) = *(s + (y - x - 1));
+		*(a + (y - x - 1)) = temp;
+		x++;
 	}
 }
