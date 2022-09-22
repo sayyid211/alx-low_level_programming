@@ -12,7 +12,7 @@ char *_strncpy(char *dest, char *src, int n)
 {
 	int i = 0; /* iterator fot indeces */
 
-	while (*src)
+	while (*(src + i) != '\0')
 	{
 		if (i < n)
 		{
