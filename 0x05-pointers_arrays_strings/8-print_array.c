@@ -1,4 +1,4 @@
-#include "main.h"
+include "main.h"
 #include <stdio.h>
 
 /**
@@ -9,12 +9,18 @@
 
 void print_array(int *a, int n)
 {
-	int i = 0; /* itrator val */
+	int x = 0;
+	int i = 0;
 
-	while ((a[i] != 0) && (i < (n - 1)))
+	while ((*(a + i) != 0) && x < n)
 	{
-		printf("%d, ", a[i]);
+		printf("%d", a[i]);
+		if (x < n - 1)
+		{
+			printf(", ");
+		}
 		i++;
+		x++;
 	}
-	printf("%d\n", a[n - 1]);
+	printf("\n");
 }
