@@ -24,8 +24,8 @@ void rev_string(char *s)
 	while (x < (y / 2))
 	{
 		temp = *(s + x);
-		*(s + x) = *(s + (y - x - 1));
-		*(s + (y - x - 1)) = temp;
+		*(s + x) = *(s + (y - x));
+		*(s + (y - x)) = temp;
 		x++;
 	}
 }
