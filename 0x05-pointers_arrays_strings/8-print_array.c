@@ -11,7 +11,7 @@ void print_array(int *a, int n)
 {
 	int i = 0; /* itrator val */
 
-	while ((n > 0) && (i < (n - 1)))
+	while ((a[i] != 0) && (i < (n - 1)))
 	{
 		printf("%d, ", a[i]);
 		i++;
