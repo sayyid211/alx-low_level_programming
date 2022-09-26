@@ -8,7 +8,7 @@
 
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int q = 0; /* counter for accept in s */
+	unsigned int q = 1; /* counter for accept in s */
 	int i = 0;
 	int j = 0;
 
@@ -24,5 +24,5 @@ unsigned int _strspn(char *s, char *accept)
 		}
 		j = 0;
 	}
-	return (q + 1);
+	return (q);
 }
