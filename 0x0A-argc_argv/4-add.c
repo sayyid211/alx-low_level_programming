@@ -13,15 +13,16 @@ int main(int argc, char **argv)
 	int i = 1;
 	int y;
 	int sum = 0;
+	int x;
 
 	for (; i < argc; i++)
 	{
-		int x = atoi(argv[i]);
+		x = atoi(argv[i]);
 
 		if (!x)
 		{
 			printf("0\n");
-			y = 0;
+			y = 1;
 		}
 
 		else if (__builtin_types_compatible_p(typeof(x), int))
