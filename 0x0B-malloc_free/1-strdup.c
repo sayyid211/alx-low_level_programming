@@ -10,19 +10,21 @@
 
 char *_strdup(char *str)
 {
-	char *p = malloc((_strlen(str) + 1) * sizeof(char));
+	char *p; /* var to hold the duplicate */
 	int i = 0;
-
-	while (i < _strlen(str))
+	if (str[i] == NULL)
+		return (NULL);
+	while (1)
 	{
-		p[i] = str[i];
-		i++;
+		p = malloc((_strlen(str) + 1) * size0f(char));
+		if (p == NULL)
+			return (NULL);
+		for (; i < _strlen(str); i++)
+		{
+			p[i] = str[i];
+		}
+		return (p);
 	}
-	if (str == NULL)
-		return (NULL);
-	if (p == 0)
-		return (NULL);
-	return (p);
 }
 /**
  * _strlen - returns str length
