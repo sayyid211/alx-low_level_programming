@@ -14,10 +14,10 @@ char *_carr(unsigned int size, char c);
 char *create_array(unsigned int size, char c)
 {
 	if (size == 0)
-		return (0);
-	else
-		return (_carr(size, c));
-	return (0);
+		return (NULL);
+	if (p == 0)
+		return (NULL)
+	return (_carr(size, c));
 }
 
 /**
