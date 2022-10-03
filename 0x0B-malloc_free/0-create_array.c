@@ -15,9 +15,7 @@ char *create_array(unsigned int size, char c)
 {
 	if (size == 0)
 		return (NULL);
-	if (p == 0)
-		return (NULL)
-	return (_carr(size, c));
+       	return (_carr(size, c));
 }
 
 /**
@@ -35,6 +33,8 @@ char *_carr(unsigned int size, char c)
 	parray = malloc(size * sizeof(char));
 	i = 0;
 
+	if (parray == 0)
+		return (NULL);
 	while (i < size)
 	{
 		parray[i] = c;
