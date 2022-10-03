@@ -23,6 +23,7 @@ char *create_array(unsigned int size, char c)
  * _carr -makes the actual array
  * @size: size of the array
  * @c: char to fill
+ * Return: pointer to parray
  */
 
 char *_carr(unsigned int size, char c)
