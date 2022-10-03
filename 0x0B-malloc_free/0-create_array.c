@@ -17,6 +17,7 @@ char *create_array(unsigned int size, char c)
 		return (0);
 	else
 		return (_carr(size, c));
+	return (0);
 }
 
 /**
