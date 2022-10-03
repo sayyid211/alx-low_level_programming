@@ -26,6 +26,10 @@ char *str_concat(char *s1, char *s2)
 				p[i] = s1[i];
 			}
 		}
+		else
+		{
+			p[i] = NULL;
+		}
 		i = _strlen(s1);
 		if (s2 != NULL)
 		{
@@ -33,6 +37,10 @@ char *str_concat(char *s1, char *s2)
 			{
 				p[i + j] = s2[j];
 			}
+		}
+		else
+		{
+			p[i + j] = NULL;
 		}
 		p[i + j + 1] = '\0';
 		return (p);
