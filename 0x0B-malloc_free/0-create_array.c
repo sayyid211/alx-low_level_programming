@@ -25,9 +25,9 @@ char *create_array(unsigned int size, char c)
  * @c: char to fill
  */
 
-char* _carr(unsigned int size, char c)
+char *_carr(unsigned int size, char c)
 {
-	char * parray;
+	char *parray;
 	unsigned int i; /* iterator for parray indices */
 
 	parray = malloc(size * sizeof(char));
