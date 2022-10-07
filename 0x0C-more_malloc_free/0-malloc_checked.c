@@ -5,6 +5,8 @@
 /**
  * malloc_checked - allocates mem using malloc
  * @b: arg
+ * Return: pointer to p on success
+ * 98 for insufficient memory
  */
 
 void *malloc_checked(unsigned int b)
