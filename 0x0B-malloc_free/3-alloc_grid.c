@@ -12,14 +12,19 @@
 int **alloc_grid(int width, int height)
 {
 	int i, j; /* iterators for dimentions */
-	int **p = malloc(sizeof(int) * width);
+	int **p;
 
 	if (width <= 0 || height <= 0)
 		return (NULL);
-	for (i = 0; i < width; i++)
+
+	p = malloc(sizeof(int) * height);
+	if (p == NULL)
+		return (NULL);
+
+	for (i = 0; i < height; i++)
 	{
 		/* allocate spaces for height on width */
-		p[i] = malloc(height * sizeof(int));
+		p[i] = malloc(width * sizeof(int));
 
 		/* check for NULL cells */
 		/* if cell is NULL, free the space */
@@ -33,7 +38,7 @@ int **alloc_grid(int width, int height)
 			free(p);
 			return (NULL);
 		}
-		for (j = 0; j < height; j++)
+		for (j = 0; j < width; j++)
 		{
 			p[i][j] = 0;
 		}
