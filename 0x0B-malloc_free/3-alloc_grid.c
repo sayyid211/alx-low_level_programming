@@ -28,7 +28,7 @@ int **alloc_grid(int width, int height)
 
 		/* check for NULL cells */
 		/* if cell is NULL, free the space */
-		if (p[i] == NULL)
+		/*if (p[i] == NULL)
 		{
 			while (i >= 0)
 			{
@@ -37,7 +37,7 @@ int **alloc_grid(int width, int height)
 			}
 			free(p);
 			return (NULL);
-		}
+			}*/
 		for (j = 0; j < width; j++)
 		{
 			p[i][j] = 0;
