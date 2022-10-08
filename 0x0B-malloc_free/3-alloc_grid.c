@@ -19,26 +19,11 @@ int **alloc_grid(int width, int height)
 
 	p = malloc(sizeof(int) * height);
 
-	if (p == NULL)
-		return (NULL);
-
 	for (i = 0; i < height; i++)
 	{
 		/* allocate spaces for height on width */
 		p[i] = malloc(width * sizeof(int));
 
-		/* check for NULL cells */
-		/* if cell is NULL, free the space */
-		if (p[i] == NULL)
-		{
-			while (i >= 0)
-			{
-				free(p[i]);
-				i--;
-			}
-			free(p);
-			return (NULL);
-		}
 		for (j = 0; j < width; j++)
 		{
 			p[i][j] = 0;
