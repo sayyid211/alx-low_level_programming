@@ -11,14 +11,10 @@ void print_all(const char * const format, ...)
 {
 	va_list val;
 	int r, counter = 0;
-	char p;
+	char p, *s, *separator = "";
 	double q;
-	char *s;
-	char *separator = "";
 
 	va_start(val, format);
-	if (format)
-	{
 		while (format[counter])
 		{
 			switch (format[counter])
@@ -38,13 +34,9 @@ void print_all(const char * const format, ...)
 			case 's':
 				s = va_arg(val, char *);
 				if (s == NULL)
-				{
 					printf("(nil)");
-				}
 				else
-				{
 					printf("%s%s", separator, s);
-				}
 				break;
 			default:
 				break;
@@ -52,7 +44,6 @@ void print_all(const char * const format, ...)
 			separator = ", ";
 			counter++;
 		}
-	}
 	va_end(val);
 	printf("\n");
 }
