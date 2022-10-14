@@ -1,7 +1,7 @@
 #include <stdarg.h>
 #include <stdio.h>
 #include "variadic_functions.h"
-#include <string.h>
+
 /**
  * print_all - print all args
  * @format: list of arg types
@@ -10,7 +10,6 @@
 void print_all(const char * const format, ...)
 {
 	va_list val;
-	/*int val_num = strlen(format);*/
 	int r, counter = 0;
 	char p;
 	double q;
