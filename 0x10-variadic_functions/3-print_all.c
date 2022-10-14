@@ -44,6 +44,6 @@ void print_all(const char * const format, ...)
 			counter++;
 		}
 	}
-	va_end(val);
 	printf("\n");
+	va_end(val);
 }
