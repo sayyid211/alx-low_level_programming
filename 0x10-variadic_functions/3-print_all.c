@@ -10,28 +10,29 @@
 void print_all(const char * const format, ...)
 {
 	va_list val;
-	int val_num = strlen(format);
+	/*int val_num = strlen(format);*/
 	int r, counter = 0;
 	char p;
 	double q;
 	char *s;
+	char *separator = "";
 
 	va_start(val, format);
-	while (counter < val_num)
+	while (format[counter])
 	{
 		switch (format[counter])
 		{
 		case 'c':
 			p = va_arg(val, int);
-			printf("%c", p);
+			printf("%s%c", separator, p);
 			break;
 		case 'f':
 			q = va_arg(val, double);
-			printf("%f", q);
+			printf("%s%f", separator, q);
 			break;
 		case 'i':
 			r = va_arg(val, int);
-			printf("%d", r);
+			printf("%s%d", separator, r);
 			break;
 		case 's':
 			s = va_arg(val, char *);
@@ -41,14 +42,13 @@ void print_all(const char * const format, ...)
 			}
 			else
 			{
-				printf("%s", s);
+				printf("%s%s", separator, s);
 			}
 			break;
 		default:
 			break;
 		}
-		if (counter < val_num - 1)
-			printf(", ");
+		separator = ", ";
 		counter++;
 	}
 	printf("\n");
