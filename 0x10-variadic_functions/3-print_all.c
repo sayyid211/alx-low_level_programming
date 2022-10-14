@@ -13,6 +13,8 @@ void print_all(const char * const format, ...)
 	double q;
 
 	va_start(val, format);
+	if (format)
+	{
 		while (format[counter])
 		{
 			switch (format[counter])
@@ -41,6 +43,7 @@ void print_all(const char * const format, ...)
 			separator = ", ";
 			counter++;
 		}
+	}
 	va_end(val);
 	printf("\n");
 }
