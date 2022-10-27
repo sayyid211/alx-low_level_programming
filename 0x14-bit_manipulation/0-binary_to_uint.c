@@ -1,12 +1,13 @@
 #include "main.h"
 /**
  * _strlen - computes length of str
- * @str: arg
+ * @c: arg
  * Return: length of str
  */
 unsigned int _strlen(const char *c)
 {
 	unsigned int i = 0;
+
 	while (c[i] != '\0')
 		i++;
 	return (i);
@@ -37,7 +38,7 @@ unsigned int binary_to_uint(const char *b)
 		}
 		else
 		{
-			x = (unsigned int)(b[i] - '0');
+			x = (unsigned int)(b[i]);
 			y = y + (x * p);
 			p *= 2;
 		}
