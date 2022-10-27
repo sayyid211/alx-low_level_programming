@@ -1,0 +1,7 @@
+Bit manipulation in c
+&
+|
+^
+~
+>>
+<<
