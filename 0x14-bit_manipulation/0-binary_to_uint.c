@@ -38,7 +38,7 @@ unsigned int binary_to_uint(const char *b)
 		}
 		else
 		{
-			x = b[i];
+			x = b[i] - '0';
 			y = y + (x * p);
 			p *= 2;
 		}
