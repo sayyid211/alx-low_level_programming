@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <unistd.h>
 /**
  * print_binary - prints a number in base 2
  *
@@ -7,13 +7,14 @@
  */
 void print_binary(unsigned long int n)
 {
-	char binary = NULL;
+	unsigned long int binary;
 
 	if (n == 0)
 		_putchar('0');
 	while (n)
 	{
-		binary = ((n & 1) == 0 ? '0' : '1') + binary;
+		binary = n & 1 ? '1' : '0';
 		_putchar(binary);
 		n >>= 1;
 	}
+}
