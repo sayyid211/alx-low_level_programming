@@ -19,7 +19,7 @@ int _strlen(char *s)
 }
 
 /**
- *appent_text_to_file - appends a given text to the end of a file
+ * append_text_to_file - appends a given text to the end of a file
  *
  * @filename: dest file
  * @text_content: text to append
@@ -32,13 +32,17 @@ int append_text_to_file(const char *filename, char *text_content)
 	int txt;
 	int size = _strlen(text_content);
 
-	if (!filename || !text_content)
+	if (!filename)
 		return (-1);
 
 	fd = open(filename, O_APPEND | O_RDWR);
+	if (fd < 0)
+		return (-1);
+	if (!text_content)
+		return (1);
 	txt = write(fd, text_content, size);
 
-	if (fd < 0 || txt < 0)
+	if (txt < 0)
 		return (-1);
 	close(fd);
 	return (1);
