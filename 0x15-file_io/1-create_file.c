@@ -41,7 +41,6 @@ int create_file(const char *filename, char *text_content)
 	if (text_content)
 	{
 		txt = write(fd, text_content, size);
-		txt[size] = '\0';
 		if (txt == -1)
 		{
 			close(fd);
