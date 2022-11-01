@@ -28,7 +28,7 @@ int _strlen(char *s)
 int create_file(const char *filename, char *text_content)
 {
 	int fd;
-	int txt;
+	ssize_t txt;
 	int size = _strlen(text_content);
 
 	if (!filename)
@@ -37,7 +37,7 @@ int create_file(const char *filename, char *text_content)
 
 	fd = open(filename, O_TRUNC | O_CREAT | O_WRONLY, 0600);
 	if (fd < 0)
-		return(-1);
+		return (-1);
 	if (text_content)
 	{
 		txt = write(fd, text_content, size);
