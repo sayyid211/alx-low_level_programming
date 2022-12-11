@@ -9,7 +9,7 @@ int _strlen(char *str)
 {
 	int len = 0;
 
-	while(str[len] != '\0')
+	while (str[len] != '\0')
 		len++;
 	return (len);
 }
@@ -17,12 +17,14 @@ int _strlen(char *str)
 /**
  * _strdup - duplicate a string
  * @str: str to duplicate
+ * @copy: duplicate of str
  * Return: address to strcopy
  */
 char *_strdup(char *str, char *copy)
 {
 	int i = 0; /* index of strings */
-	for (;i < _strlen(str); i++)
+
+	for (; i < _strlen(str); i++)
 	{
 		copy[i] = str[i];
 	}
