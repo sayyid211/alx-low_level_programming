@@ -21,7 +21,7 @@ void rev_string(char *s)
 	x = 0; /* make x 0 to iterate through s */
 
 	/* get reverse val of temp to s */
-	while (x < (y / 2))
+	while (x <= (y / 2))
 	{
 		temp = *(s + x);
 		*(s + x) = *(s + (y - x));
