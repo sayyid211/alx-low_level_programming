@@ -24,11 +24,12 @@ int _atoi(char *s)
 	intval = 0;
 	sign = 1;
 	i = 0;
+
 	for (;s[i] != '\0'; i++)
 	{
 		intval = (s[i] - 48) + (intval * 10);
 
-		if (s[i + 1] == ' ')
+		if (s[i + 1] == '')
 			break;
 		else if (s[i] == '-')
 		{
