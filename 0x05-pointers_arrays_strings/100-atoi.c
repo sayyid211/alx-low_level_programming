@@ -30,10 +30,10 @@ int _atoi(char *s)
 
 		if (s[i + 1] == ' ')
 			break;
-	}
-	else if (s[i] == '-')
-	{
-		sign *= -1;
+		else if (s[i] == '-')
+		{
+			sign *= -1;
+		}
 	}
 	return (intval * sign);
 }
