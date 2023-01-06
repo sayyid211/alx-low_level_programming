@@ -11,13 +11,13 @@ void hash_table_print(const hash_table_t *ht)
 	hash_node_t *tmp;
 
 	if (!ht)
-		exit (0);
+		exit(0);
 	printf("{");
 	for (id = 0, end = 1; id < ht->size; id++)
 	{
 		for (tmp = ht->array[id]; tmp != NULL; tmp = tmp->next)
 		{
-			printf("%s'%s': '%s'", end == 1? "" : ",",
+			printf("%s'%s': '%s'", end == 1 ? "" : ",",
 			       tmp->key, tmp->value);
 			       end = 0;
 		}
