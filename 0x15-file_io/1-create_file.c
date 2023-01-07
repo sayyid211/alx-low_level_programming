@@ -38,15 +38,11 @@ int create_file(const char *filename, char *text_content)
 	fd = open(filename, O_TRUNC | O_CREAT | O_WRONLY, 0600);
 	if (fd == -1)
 		return (-1);
-	if (text_content)
-		txt = write(fd, text_content, size);
 	if (text_content == NULL)
 		return (1);
-	if (txt == -1)
-	{
-		close(fd);
-		return (-1);
-	}
+
+	txt = write(fd, text_content, size + 1);
 	close(fd);
-	return (1);
+
+	return (txt == -1 ? -1 : 1);
 }
