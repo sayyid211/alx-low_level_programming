@@ -3,7 +3,7 @@
 /**
  * _realloc - reallocates memspace using malloc and free
  *
- * @ptr: pointer to previously allocated memspace\
+ * @ptr: pointer to previously allocated memspace
  * @old_size: old size
  * @new_size: new size
  * Return: reallocated memspace
