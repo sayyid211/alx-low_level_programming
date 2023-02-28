@@ -29,7 +29,13 @@ char *_strcat(char *dest, char *src)
 	int joint = _strlen(dest) - 1;
 	int i = 0;
 
-	while (*(src + i) != '\0')
+	if (*src)
+	{
+		dest[joint] = ' ';
+		joint += 1;
+	}
+
+	while (*(src + i))
 	{
 		dest[joint] = src[i];
 		joint++;
