@@ -24,8 +24,7 @@ int _atoi(char *s)
 	unsigned int intval = 0;
 	int sign = 1;
 
-	do
-	{
+	do {
 		if (*s == '-')
 			sign *= -1;
 		else if (*s >= '0' && *s <= '9')
