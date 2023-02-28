@@ -15,7 +15,7 @@ int main(void)
 	{
 		while (n % div == 0)
 		{
-			n = n/div;
+			n = n / div;
 		}
 	}
 	printf("%lu\n", div);
