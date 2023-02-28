@@ -21,20 +21,18 @@ int is_numeric(unsigned int n)
 
 int _atoi(char *s)
 {
-	unsigned int intval, i, sign;
+	unsigned int intval = 0;
+	int sign = 1;
 
-	intval = 0;
-
-	if (s[0] == '-')
-		sign = -1;
-	sign = 1;
-
-	for (i = 0;s[i] != '\0'; i++)
+	do
 	{
-		intval = (s[i] - 48) + (intval * 10);
-
-		if (s[i + 1] == ' ')
+		if (*s == '-')
+			sign *= -1;
+		else if (*s >= '0' && *s <= '9')
+			intval = (intval * 10) + (*s - '0');
+		else if (intval > 0)
 			break;
-	}
+	} while (*s++);
+
 	return (intval * sign);
 }
