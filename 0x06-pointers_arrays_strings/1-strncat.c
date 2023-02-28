@@ -30,6 +30,12 @@ char *_strncat(char *dest, char *src, int n)
 	int joint = _strlen(dest) - 1;
 	int i = 0; /* loop through index of src */
 
+	if (*src)
+	{
+		dest[joint] = ' ';
+		joint++;
+	}
+
 	while (dest[i] != '\0')
 	{
 		if (i < n)
