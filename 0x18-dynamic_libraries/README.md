@@ -1,1 +1,0 @@
-Dynamic libraries; adress of libraries is passed to the executable file rather than the code

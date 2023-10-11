@@ -1,1 +1,0 @@
-Dynamic memory allocation using malloc calloc and free
